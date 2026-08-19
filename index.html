@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="km">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#070707">
+<title>NASRIN SOUN — Forex Academy</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="topbar">
+  <div class="brand-mark"><span>NS</span><div><b>NASRIN SOUN</b><small>FOREX ACADEMY</small></div></div>
+  <nav>
+    <button class="nav-btn active" onclick="showPage('home')">HOME</button>
+    <button class="nav-btn" onclick="showPage('lessons')">VIDEO LESSONS</button>
+    <button class="nav-btn" onclick="showPage('howto')">HOW TO PAY</button>
+    <a class="nav-link" href="https://secure.yaitrading.pro/reffer/2025_jp3244" data-link="yaiTrading" target="_blank" rel="noopener">Y.A.I TRADING ↗</a>
+  </nav>
+  <button class="mobile-menu" onclick="toggleMenu()">☰</button>
+</div>
+
+<main>
+<section id="home" class="page active">
+  <div class="home-design">
+    <img src="home-header.png" alt="NASRIN SOUN" class="home-img">
+    <div class="hero-shade"></div>
+    <a class="hotspot community" href="https://t.me/journeywitme" data-link="community" target="_blank" rel="noopener" aria-label="Community"></a>
+    <a class="hotspot telegram" href="https://t.me/Nasrin_Suon" data-link="telegram" target="_blank" rel="noopener" aria-label="Telegram"></a>
+    <a class="hotspot signal" href="https://t.me/Learning_Forex_Nasrin" data-link="signal" target="_blank" rel="noopener" aria-label="Signal"></a>
+    <a class="hotspot learning" href="https://t.me/open_acc026" data-link="learningForex" target="_blank" rel="noopener" aria-label="Learning Forex"></a>
+    <a class="hotspot facebook" href="https://www.facebook.com/profile.php?id=61587144250978" data-link="facebook" target="_blank" rel="noopener" aria-label="Facebook Page"></a>
+    <a class="hotspot youtube" href="https://www.youtube.com/@nasrinsoun4532" data-link="youtube" target="_blank" rel="noopener" aria-label="YouTube"></a>
+  </div>
+</section>
+
+<section id="lessons" class="page">
+  <div class="section-head">
+    <div>
+      <p class="eyebrow">FOREX ACADEMY · 01</p>
+      <h1>VIDEO <span>LESSONS</span></h1>
+      <p>រៀនពីការបង្កើត Account រហូតដល់ការប្រើប្រាស់ Y.A.I Trading និង MT5</p>
+    </div>
+    <div class="head-actions">
+      <button class="gold-btn" onclick="showPage('home')">⌂ HOME</button>
+      <button class="outline" onclick="showPage('howto')">NEXT · HOW TO PAY →</button>
+    </div>
+  </div>
+  <div id="lessonGrid" class="grid"></div>
+</section>
+
+<section id="howto" class="page">
+  <div class="section-head">
+    <div>
+      <p class="eyebrow">MT5 GUIDE · 02</p>
+      <h1>HOW TO <span>PLAY</span></h1>
+      <p>មេរៀនអនុវត្តការប្រើប្រាស់ MT5 និងការទិញលក់</p>
+    </div>
+    <div class="head-actions">
+      <button class="gold-btn" onclick="showPage('home')">⌂ HOME</button>
+      <button class="outline" onclick="showPage('lessons')">← VIDEO LESSONS</button>
+    </div>
+  </div>
+  <div id="howtoGrid" class="grid"></div>
+</section>
+
+<section id="player" class="page">
+  <div class="player-page">
+    <div class="player-top">
+      <button class="gold-btn" onclick="backFromPlayer()">← BACK</button>
+      <button class="outline" onclick="showPage('home')">⌂ HOME</button>
+    </div>
+    <div class="player-title">
+      <p class="eyebrow">NOW PLAYING</p>
+      <h1 id="playerTitle"></h1>
+    </div>
+    <div class="player-card">
+      <video id="videoPlayer" controls playsinline preload="metadata"></video>
+    </div>
+    <div id="playerAction"></div>
+  </div>
+</section>
+</main>
+<footer><b>NASRIN SOUN</b><span>DISCIPLINE · PATIENCE · CONSISTENCY</span></footer>
+<script src="script.js"></script>
+</body>
+</html>
